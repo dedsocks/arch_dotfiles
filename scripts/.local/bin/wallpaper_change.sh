@@ -5,7 +5,7 @@ CACHE_FILE="$HOME/.cache/current_wallpaper"
 
 cd "$WALLPAPER_DIR" || exit 1
 
-SELECTED=$(ls -1 *.jpg *.png *.jpeg *.gif 2>/dev/null | rofi -dmenu -i -p "Wallpaper ")
+SELECTED=$(ls -1 *.jpg *.png *.jpeg *.gif *.webp 2>/dev/null | rofi -dmenu -i -p "Wallpaper ")
 
 if [ -z "$SELECTED" ]; then
     exit 0
